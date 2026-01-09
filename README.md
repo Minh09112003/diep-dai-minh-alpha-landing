@@ -26,7 +26,6 @@ Trang này được xây dựng cho **bài kiểm tra Practical Test của Alpha
 
 ### 2. Mở offline bằng VS Code + Live Server
 1. Clone repository về máy:
-```bash
 git clone https://github.com/DiepDaiMinh/diep-dai-minh-alpha-landing.git
 2. Mở thư mục project bằng VS Code, cài extension Live Server (nếu chưa có), rồi click “Go Live”.
 Trình duyệt sẽ mở localhost và tất cả ảnh, CSS, JS sẽ load đầy đủ.
