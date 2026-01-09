@@ -1,0 +1,3046 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sculptique - Lymphatic Drainage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGreen: '#1d4d3a',
+                        saleRed: '#e31e24',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+    @layer components {
+        .bundle-card {
+            @apply relative bg-white border border-[#00b67a] rounded-[12px] pt-4 px-4 pb-0 mb-3 cursor-pointer transition-all duration-200 overflow-hidden flex flex-col;
+        }
+
+        /* MẶC ĐỊNH: Các thanh quà tặng màu xanh mờ/nhạt */
+        .gift-bar {
+            /* lề âm (mx-[-1rem]) để đẩy thanh này tràn ra sát viền của thẻ cha */
+    @apply flex items-center gap-2 bg-[#039869]/60 text-white text-[12px] font-bold py-1 px-1 mt-auto -mx-4 border-l border-r border-b border-[#00b67a] transition-all;
+        }
+
+        /* KHI GÓI ĐƯỢC CHỌN: Các thanh quà tặng chuyển sang xanh ĐẬM */
+        .bundle-card.active .gift-bar {
+            @apply bg-[#039869] opacity-100;
+        }
+
+        /* Radio circle luôn xanh lá theo ý bạn */
+        .radio-circle {
+            @apply w-6 h-6 border-2 border-[#039869] rounded-full flex items-center justify-center flex-shrink-0;
+        }
+        
+        /* Nhân bên trong chỉ hiện khi active */
+        .bundle-card.active .radio-circle::after {
+            content: '';
+            @apply w-3 h-3 bg-[#039869] rounded-full;
+        }
+    }
+ 
+
+
+
+ 
+
+
+@keyframes scrollLogos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 1024px) {
+            .carousel-item {
+                flex: 0 0 calc(33.333% - 14px);
+                width: calc(33.333% - 14px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item {
+                flex: 0 0 calc(50% - 10px);
+                width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-item {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+        }
+</style>
+</head>
+<body class="bg-white">
+
+    <header class="w-full bg-white">
+    <div class="max-w-[884px] mx-auto p-[12px] flex justify-center items-center font-['Montserrat'] text-[16px]">
+        <a href="/">
+            <img 
+                src="//trysculptique.com/cdn/shop/files/gempages_567005027885909033-610eea12-3864-40f1-b0bb-802237c7296c.png?v=1756727579" 
+                alt="sculptique." 
+                style="width: 160px; height: 43.725px;"
+                class="object-contain block"
+            >
+        </a>
+    </div>
+</header>
+
+    <main class="max-w-7xl mx-auto px-[15px] md:px-6 py-8">
+    <div class="grid md:grid-cols-2 gap-4 md:gap-16 items-start">
+        
+<div class="relative">
+  <div class="space-y-4">
+    <div class="rounded-[8px] overflow-hidden shadow-sm relative group">
+      <button onclick="changeSlide(-1)" class="md:hidden absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-white/70 backdrop-blur-md rounded-full p-2 shadow-lg active:scale-90 transition-transform">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+      </button>
+      <button onclick="changeSlide(1)" class="md:hidden absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-white/70 backdrop-blur-md rounded-full p-2 shadow-lg active:scale-90 transition-transform">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+      </button>
+
+      <img id="mainProductImage" src="//trysculptique.com/cdn/shop/files/LymoPDPImagesArtboard1_8e287aa1-576e-42b1-9a87-ce2fcdaded3a.jpg?v=1760103674" alt="Product" class="w-full h-auto block transition-opacity duration-300">
+      
+      <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/nysale.png?v=1766822224" class="absolute top-[15px] right-[15px] w-[80px] h-[80px] md:w-[120px] md:h-[120px] z-10">
+      
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-[14px] font-['Montserrat'] w-full flex justify-center">
+        <button id="openNutritionModal" class="bg-white/95 backdrop-blur-md px-6 py-2 rounded-full tracking-wide flex items-center gap-2 border border-white/30 shadow-lg hover:bg-white/80 transition whitespace-nowrap">
+          <img class="w-[24px] h-[24px]" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/leaves_1247958_1_cf2e7df4-c113-4c3a-be49-f876ec94d873.png?v=1766822629"> 
+          Nutritional Information
+        </button>
+      </div>
+    </div>
+
+<div class="w-full">
+  <div id="subImageContainer" class="flex md:block overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory gap-3 scroll-smooth items-start">
+    
+    <img src="//trysculptique.com/cdn/shop/files/LymoPDPImagesArtboard1_8e287aa1-576e-42b1-9a87-ce2fcdaded3a.jpg?v=1760103674" 
+         class="sub-image md:hidden snap-start shrink-0 w-[calc(25%-9px)] rounded-[8px] cursor-pointer border-2 border-black opacity-100" alt="Main Thumb">
+
+    <div class="contents md:grid md:grid-cols-2 md:gap-4 md:mb-3">
+      <img src="//trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard2.jpg?v=1760103684" 
+           class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 1">
+      <img src="//trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard3copy.jpg?v=1760103684" 
+           class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 2">
+    </div>
+
+    <div class="contents md:grid md:grid-cols-3 md:gap-4 md:py-3">
+      <img src="//trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard4.jpg?v=1760103685" class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 3">
+      <img src="//trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard5_1.jpg?v=1760103685" class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 4">
+      <img src="//trysculptique.com/cdn/shop/files/LymphDrainageREWAMPEDvisualsArtboard5_2.jpg?v=1760103685" class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 5">
+    </div>
+
+    <div class="contents md:grid md:grid-cols-2 md:gap-4 md:mt-3">
+      <img src="//trysculptique.com/cdn/shop/files/tiredness-min.png?v=1758713216" class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 6">
+      <img src="//trysculptique.com/cdn/shop/files/puffiness-min.png?v=1758713216" class="sub-image snap-start shrink-0 w-[calc(25%-9px)] md:w-full rounded-[8px] cursor-pointer border-2 border-transparent opacity-70 md:opacity-100 md:border-none" alt="Detail 7">
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+
+
+
+
+        <div class="space-y-5 tracking-wide">
+            <div class="flex items-center gap-2 leading-[1.3em]">
+    <img 
+        src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Frame_229.png?v=1752064359" 
+        class="h-auto w-[60px] sm:w-[100px] sm:h-[18px] pr-2 object-contain"
+    >
+
+    <span class="text-[12px] sm:text-[16px] font-['Nunito']">
+        4.8/5 Excellent | Based on 2381 Reviews
+    </span>
+</div>
+
+            <h2 class="text-[24px] md:text-[28px] font-['Lora'] leading-[1.4em]">
+                New Maximum Potency Formula - Lymphatic Drainage Capsules by Sculptique™
+            </h2>
+
+            <ul class="space-y-4 text-[17px]">
+                <li class="flex items-center gap-[16px] h-[35px] md:h-[52px]">
+                    <img src="//trysculptique.com/cdn/shop/files/population_12285628_1_e864791e-7a6d-4f08-9aea-3aeffba37cc7.png?v=1758713413" class="h-full w-auto object-contain" alt="icon">
+                    <p class="text-[16px] font-['Nunito']">Join over 93 Thousand who say - it WORKS!</p>
+                </li>
+                <li class="flex items-center gap-[16px] h-[35px] md:h-[52px]">
+                    <img src="//trysculptique.com/cdn/shop/files/blood_13858030_1.png?v=1752064910" class="h-full w-auto object-contain" alt="icon">
+                    <p class="text-[16px] font-['Nunito']">Restores your body’s natural 24-hour lymphatic cycle</p>
+                </li>
+                <li class="flex items-center gap-[16px] h-[35px] md:h-[52px]">
+                    <img src="//trysculptique.com/cdn/shop/files/thigh_1431039_1_a75a1917-7cc8-40dc-923b-d09cece1d6e9.png?v=1758713413" class="h-full w-auto object-contain" alt="icon">
+                    <p class="text-[16px] font-['Nunito']">
+                    Helps reduce fluid retention and the appearance of puffiness and bloating</p>
+                </li>
+                <li class="flex items-center gap-[16px] h-[35px] md:h-[52px]">
+                    <img src="//trysculptique.com/cdn/shop/files/smile_3318262_1_1da99ae9-5c63-4339-af75-d35f89cd1cbc.png?v=1758713414" class="h-full w-auto object-contain" alt="icon">
+                    <p class="text-[16px] font-['Nunito']">Helps fall asleep faster, stay asleep longer and wake up energized</p>
+                </li>
+                <li class="flex items-center gap-[16px] h-[35px] md:h-[52px]">
+                    <img src="//trysculptique.com/cdn/shop/files/blood_13858030_2_78da9178-9f3f-491e-a5f8-b4d69dd5b9cd.png?v=1758713414" class="h-full w-auto object-contain" alt="icon">
+                    <p class="text-[16px] font-['Nunito']">Eliminates joint stiffness, pain, morning creakiness and feel more grounded</p>
+                </li>
+                <li class="flex items-center gap-[16px] h-[35px] md:h-[52px]">
+                    <img src="//trysculptique.com/cdn/shop/files/ecology_18588873_1_dad420da-2490-4e30-828a-28b366974307.png?v=1758713413" class="h-full w-auto object-contain" alt="icon">
+                    <p class="text-[16px] font-['Nunito']">Boosts energy, mental clarity and emotional balance</p>
+                </li>
+
+
+
+
+
+
+
+
+
+
+<li class="flex items-center h-auto md:h-[80px] py-2 md:py-0">
+    <div class="bg-white flex items-start sm:items-center gap-3 md:gap-4 max-w-md w-full relative p-2 md:p-0">
+        
+        <button class="close-item absolute -top-1 right-1 text-black hover:text-gray-600 bg-gray-200 hover:bg-gray-300 rounded-full w-5 h-5 flex items-center justify-center transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <div class="flex items-center gap-0.5 md:gap-1 shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 35" fill="black" class="w-[16px] h-[40px] md:w-[17px] md:h-[40px]">
+                <path d="M2.60396 10.0782C2.63019 12.7275 5.0681 14.8472 5.0681 14.8472C5.0681 14.8472 7.46457 12.6717 7.43993 10.0222C7.41325 7.3697 4.97398 5.25178 4.97398 5.25178C4.97398 5.25178 2.57932 7.42863 2.60396 10.0782ZM1.34556 19.1722C2.78927 21.3977 5.99278 21.9007 5.99278 21.9007C5.99278 21.9007 6.85625 18.7951 5.41254 16.5696C3.96883 14.3441 0.763495 13.8397 0.763495 13.8397C0.763495 13.8397 -0.0997442 16.9469 1.34556 19.1722ZM3.82901 27.3622C6.16621 28.6381 9.23028 27.5709 9.23028 27.5709C9.23028 27.5709 8.50337 24.4335 6.16618 23.1576C3.82898 21.8817 0.764911 22.9489 0.764911 22.9489C0.764911 22.9489 1.49182 26.0862 3.82901 27.3622ZM10.5368 33.3638C13.0903 34.1327 15.868 32.4611 15.868 32.4611C15.868 32.4611 14.504 29.5425 11.9502 28.772C9.39665 28.0031 6.62082 29.6761 6.62082 29.6761C6.62082 29.6761 7.98323 32.5949 10.5368 33.3638ZM9.02056 3.29033C7.3448 5.35644 7.8659 8.53241 7.8659 8.53241C7.8659 8.53241 11.1079 8.36114 12.7836 6.29503C14.4594 4.22891 13.9381 1.05136 13.9381 1.05136C13.9381 1.05136 10.6963 1.22421 9.02056 3.29033Z" stroke="#121212" stroke-linecap="round"></path>
+            </svg>
+
+            <div class="flex flex-col items-center leading-none text-black">
+                <span class="font-['Lora'] text-[16px] md:text-[16px] pb-0.5 md:pb-1">Clinicians'</span>
+                <span class="font-['Lora'] text-[16px] md:text-[16px]">Choice</span>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 35" fill="black" class="w-[16px] h-[40px] md:w-[17px] md:h-[40px]">
+                <path d="M14.1756 10.0782C14.1494 12.7275 11.7114 14.8472 11.7114 14.8472C11.7114 14.8472 9.31497 12.6717 9.33961 10.0222C9.36629 7.3697 11.8056 5.25178 11.8056 5.25178C11.8056 5.25178 14.2002 7.42863 14.1756 10.0782ZM15.434 19.1722C13.9903 21.3977 10.7868 21.9007 10.7868 21.9007C10.7868 21.9007 9.92329 18.7951 11.367 16.5696C12.8107 14.3441 16.016 13.8397 16.016 13.8397C16.016 13.8397 16.8793 16.9469 15.434 19.1722ZM12.9505 27.3622C10.6133 28.6381 7.54926 27.5709 7.54926 27.5709C7.54926 27.5709 8.27617 24.4335 10.6134 23.1576C12.9506 21.8817 16.0146 22.9489 16.0146 22.9489C16.0146 22.9489 15.2877 26.0862 12.9505 27.3622ZM6.24277 33.3638C3.68923 34.1327 0.911591 32.4611 0.911591 32.4611C0.911591 32.4611 2.27559 29.5425 4.82935 28.772C7.38289 28.0031 10.1587 29.6761 10.1587 29.6761C10.1587 29.6761 8.79631 32.5949 6.24277 33.3638ZM7.75898 3.29033C9.43474 5.35644 8.91365 8.53241 8.91365 8.53241C8.91365 8.53241 5.67166 8.36114 3.9959 6.29503C2.32014 4.22891 2.84146 1.05136 2.84146 1.05136C2.84146 1.05136 6.08322 1.22421 7.75898 3.29033Z" stroke="#121212" stroke-linecap="round"></path>
+            </svg>
+        </div>
+
+        <div class="flex-1">
+            <p class="leading-[1.3em] text-[11px] md:text-[13px] font-['Open sans', serif] text-gray-800">
+                <span class="font-semibold">336 clinicians</span> share this on <span class="italic">FrontrowMD</span> without compensation. 
+                <a href="#" class="underline underline-offset-2 decoration-1 text-gray-900 hover:text-black">Learn more</a>
+            </p>
+            
+            <div class="flex items-center gap-1.5 md:gap-2 mt-1 md:mt-2">
+                <div class="flex -space-x-1 overflow-hidden">
+                    <img class="inline-block h-3 w-3 md:h-4 md:w-4 rounded-full ring-1 md:ring-2 ring-white object-cover" src="https://assets.app.thefrontrowhealth.com/jijjnma3wz2ktevmvpuoewdnubm0" alt=""/>
+                    <img class="inline-block h-3 w-3 md:h-4 md:w-4 rounded-full ring-1 md:ring-2 ring-white object-cover" src="https://assets.app.thefrontrowhealth.com/yulyi33mil8glzv4b7fhzs5ipnz2" alt=""/>
+                    <img class="inline-block h-3 w-3 md:h-4 md:w-4 rounded-full ring-1 md:ring-2 ring-white object-cover" src="https://assets.app.thefrontrowhealth.com/pa8nliuewz7t7g0dmxjawwf0kr5a" alt=""/>
+                </div>
+                <a href="#" class="text-[11px] md:text-[13px] font-['Open sans', serif] font-semibold text-gray-800 hover:text-gray-700">Read their reviews</a>
+            </div>
+        </div>
+        
+    </div>
+</li>
+            </ul>
+
+
+
+            <div class="bundles-container bg-[#F3EEE0] rounded-[8px] p-4 mt-6 border-none flex flex-col gap-1">
+    <div class="bundle-card active" onclick="selectBundle(this, 31.96)" data-refill="Refills Ship Monthly">
+        <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center gap-2">
+                <div class="radio-circle"></div>
+                <div>
+                    <div class="text-[16px] font-semibold font-['Nunito']">1 Bottle</div>
+                    <div class="text-[12px] font-['Nunito']">1 bottle total | Save $27.99</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="font-semibold text-[16px] font-['Nunito']">$31.96</div>
+                <div class="text-[#000000BF] line-through text-[14px] font-['Montserrat']">$59.95</div>
+            </div>
+        </div>
+        <div class="gift-bar">
+            <img class="w-[31px] h-[31px]" src="//trysculptique.com/cdn/shop/files/delivery-truck_181581.png?v=1749555916">
+             <p>Free USA Shipping</p>
+        </div>
+    </div>
+
+    <div class="bundle-card relative overflow-visible rounded-[16px] shadow-sm border border-gray-200" onclick="selectBundle(this, 63.92)" data-refill="Refills Ship Bi-Monthly">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/nysale.png?v=1766822224" class="absolute -top-5 -right-1 w-[77px] h-[37px] z-10 ">
+        <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center gap-3">
+                <div class="radio-circle"></div>
+                <div>
+                    <div class="text-[16px] font-semibold font-['Nunito']">Buy 2 Get 1 Free</div>
+                    <div class="text-[12px] font-['Nunito']">3 bottles total | Save $115.93</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="font-semibold text-[16px] font-['Nunito']">$63.92</div>
+                <div class="text-[#000000BF] line-through text-[14px] font-['Montserrat']">$179.85</div>
+            </div>
+        </div>
+         <div class="space-y-1">
+            <div class="gift-bar">
+            <img class="w-[31px] h-[31px]" src="//trysculptique.com/cdn/shop/files/delivery-truck_181581.png?v=1749555916">
+             <p>Free USA Shipping</p>
+        </div>
+            <div class="gift-bar rounded-bl-[12px] rounded-br-[16px]">
+            <img class="w-[31px] h-[31px]" src="//trysculptique.com/cdn/shop/files/download_5307610.png?v=1749555943">
+             <p>Free Anti-Bloating Protocol E-book</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="bundle-card" onclick="selectBundle(this, 95.88)" data-refill="Refills Ship Every 12 Week">
+        <div class="flex justify-between items-center mb-2">
+            <div class="flex items-center gap-3">
+                <div class="radio-circle"></div>
+                <div>
+                    <div class="text-[16px] font-semibold font-['Nunito']">Buy 3 Get 2 Free</div>
+                    <div class="text-[12px] font-['Nunito']">5 bottles total | Save $203.87</div>
+                </div>
+            </div>
+            <div class="text-right">
+                <div class="font-semibold text-[16px] font-['Nunito']">$95.88</div>
+                <div class="text-[#000000BF] line-through text-[14px] font-['Montserrat']">$299.75</div>
+            </div>
+        </div>
+        <div class="space-y-1">
+            <div class="gift-bar">
+            <img class="w-[31px] h-[31px]" src="//trysculptique.com/cdn/shop/files/delivery-truck_181581.png?v=1749555916">
+             <p>Free USA Shipping</p>
+        </div>
+            <div class="gift-bar">
+            <img class="w-[31px] h-[31px]" src="//trysculptique.com/cdn/shop/files/download_5307610.png?v=1749555943">
+             <p>Free Anti-Bloating Protocol E-book</p>
+        </div>
+        <div class="gift-bar">
+            <img class="w-[31px] h-[31px]" src="//trysculptique.com/cdn/shop/files/Kaching-Bundles-Kaching-Bundles-Kaching-Bundles-gift-card_18054896_300x300_300x300_72117561-797d-4e48-9491-3bc1748ce974.png?v=1749556309">
+             <p>$20 Gift Card</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex items-center gap-2 mt-4 font-['Nunito']">
+  <i class="fa-solid fa-truck text-[12px] md:text-[16px]"></i>
+  <p class="text-[12px] md:text-[16px] font-['Nunito']">
+    Delivered on 
+    <span class="bg-[#039869] text-white px-2 py-1 rounded font-bold mr-1">
+      Tuesday, 13 January
+    </span> 
+     with Express Shipping
+  </p>
+</div>
+
+
+<button id="add-to-cart-btn" class="w-full bg-black text-white font-bold py-3 rounded-md text-[18px] mt-4 hover:bg-[#222] transition-all uppercase font-['Montserrat']">
+    ADD TO CART
+</button>
+
+
+<div class="flex items-center justify-center gap-6 mt-4 text-[12px] md:text-[16px] font-['Nunito']">
+    <div class="flex items-center gap-2">
+        <svg class="w-[16px] h-[16px] md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+        <span id="refill-text">Refills Ship Monthly</span>
+    </div>
+    <div class="flex items-center gap-2 border-l border-gray-800 pl-6">
+        <svg class="w-[16px] h-[16px] md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>Stop or Cancel Anytime</span>
+    </div>
+</div>
+
+<img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Frame_1000003454.png?v=1752066654" class="justify-center gap-2 mt-4">
+
+<div class="mt-6 rounded-xl overflow-hidden shadow-sm">
+    <img src="//trysculptique.com/cdn/shop/files/CTA_Button_Add_To_Cart_8b5e7dd2-d716-4b24-a339-d8f27d86e61a.png?v=1766758486" class="w-full object-cover" alt="New Year New Me Sale">
+</div>
+
+<div class="space-y-3 mt-6">
+    <div class="flex items-center gap-3 text-[14px] font-medium">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1.png?v=1752066864" class="w-[19px] h-[19px] md:w-7 md:h-7" alt="Guarantee">
+        <span class="text-[16px] font-['Nunito']">60-Day Money-Back Guarantee</span>
+    </div>
+    <div class="flex items-center gap-3 text-[14px] font-medium">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Frame_1000003293.png?v=1752066864" class="w-[19px] h-[19px] md:w-7 md:h-7" alt="USA Shipping">
+        <span class="text-[16px] font-['Nunito']">Free Shipping From USA Included</span>
+    </div>
+
+
+
+
+<div class="review-card shadow-sm font-['Nunito'] tracking-normal">
+    <div class="flex items-center gap-3 mb-3">
+        <img src="//trysculptique.com/cdn/shop/files/AI_Nurse_Holding_TORC_2_efcbd677-7242-4cb2-9f99-ad1e3726b19b.png?v=1752500889" alt="Margaret Ellison" class="w-[47px] h-[47px] md:w-[72px] md:h-[72px] rounded-full object-cover border border-gray-200">
+        
+        <div class="flex flex-col">
+            <div class="flex items-center gap-1">
+                <span class="text-[16px] font-['Nunito']">Margaret Ellison | FL</span>
+                <span class="flex items-center text-[#00b67a] text-[11px] font-bold">
+                    <svg class="w-3 h-3 mr-1 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path></svg>
+                    <p class="font-['Nunito'] text-[12px]">Verified Customer</p>
+                </span>
+            </div>
+            <div class="mt-0.5">
+                <img class="w-[100px] h-[18px]" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/stars-4.5_1.png?v=1752068267">
+            </div>
+        </div>
+    </div>
+
+    <p class="font-semibold text-[16px] mb-2">Even my husband noticed... the spark came back.</p>
+    <p class="text-[16px]">
+        After years of hiding under coverups, picking apart my body, and feeling disconnected, I finally feel at ease again. I feel less bloated, lighter, like my body is working with me not against me. These past months, I’ve been present. Even my marriage feels renewed, not just in how I look but in how I feel. It’s hard to explain, but once you try it you’ll get it. I’d recommend this to my closest friends without question.
+    </p>
+</div>
+
+
+
+<div class="mt-8 space-y-3 font-['Nunito']">
+    <div class="border border-gray-200 rounded-[32px] overflow-hidden bg-white shadow-sm transition-all duration-300">
+        <div id="card-ingredients" class="accordion-item">
+            <button onclick="toggleAccordion('ingredients')" 
+                class="w-full flex items-center justify-between h-[60px] px-5 text-left hover:bg-gray-50 transition-colors">
+                <span class="text-[16px] font-['Nunito'] flex items-center">Ingredients proven by science</span>
+                <span id="icon-ingredients" class="accordion-icon">+</span>
+            </button>
+        </div>
+        <div id="content-ingredients" class="accordion-content text-[15px] px-5 text-gray-700 leading-relaxed border-t border-gray-100">
+            <div class="py-4">
+                <p class="font-bold text-[16px] font-['Nunito'] mb-3">Sculptique Ingredients:</p>
+                <ul class="space-y-3 list-disc pl-5">
+                    <li class="text-[16px] font-['Montserrat']"><strong>Echinacea purpurea Extract</strong> – Known for its anti-inflammatory properties.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Dandelion Extract</strong> – Traditionally used as a diuretic to help reduce water retention.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Burdock Powder</strong> – Contains antioxidants that may promote skin clarity.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Cleavers Extract</strong> – Believed to support lymphatic drainage and detoxification.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Rutin</strong> – A flavonoid that may strengthen blood vessels.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Bromelain Powder</strong> – An enzyme from pineapple that may reduce inflammation.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Lemon Powder</strong> – Rich in vitamin C, aids in collagen production.</li>
+                    <li class="text-[16px] font-['Montserrat']"><strong>Kelp Extract</strong> – A source of iodine that supports metabolism.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-[32px] overflow-hidden bg-white shadow-sm transition-all duration-300">
+        <button onclick="toggleAccordion('how-it-works')" class="w-full flex items-center justify-between h-[60px] px-5 text-left hover:bg-gray-50 transition-colors"> 
+            <span class="text-[16px] flex items-center">How does it actually work?</span> 
+            <span id="icon-how-it-works" class="accordion-icon">+</span> 
+        </button>
+        <div id="content-how-it-works" class="accordion-content px-5 text-[15px] text-gray-700 leading-relaxed border-t border-gray-100">
+            <div class="py-4">
+                <p class="text-[16px] font-['Nunito']">Sculptique works by improving blood flow and supporting lymphatic drainage to reduce fluid buildup that causes puffiness, inflammation, and water retention. It also reduces inflammation and boosts collagen production to help skin become firmer and smoother.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="border border-gray-200 rounded-[32px] overflow-hidden bg-white shadow-sm transition-all duration-300">
+        <button onclick="toggleAccordion('shipping')" class="w-full flex items-center justify-between h-[60px] px-5 text-left hover:bg-gray-50 transition-colors"> 
+            <span class="text-[16px] font-[Nunito] flex items-center">Shipping and returns</span> 
+            <span id="icon-shipping" class="accordion-icon">+</span> 
+        </button>
+        <div id="content-shipping" class="accordion-content px-5 text-[15px] text-gray-700 leading-relaxed border-t border-gray-100">
+            <div class="py-4 space-y-3">
+                <p>All of Sculptique orders get <strong>FREE shipping</strong> straight from our USA warehouse. Orders are usually shipped out within 1-2 working days, and you should receive the order within 3-7 working days for domestic USA orders, and within 10 working days for International orders.</p>
+                <p>We also offer a <strong>60-day money back guarantee</strong> - if you are unsatisfied with our product, you can take advantage of our guarantee and ship back the product to us to get your return within 60 days of receiving your order.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+<section class="bg-[#F3EEE0] py-5">
+    <div class="max-w-8xl mx-auto px-4">
+        <p class="text-center font-['Trirong'] text-[18px] md:text-[24px] mb-5">As Seen In</p>
+        
+        <div class="slider-container grayscale opacity-90">
+            <div class="logo-slider items-center gap-12 md:gap-20">
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Women's Health" class="h-5 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678" alt="Grazia" class="h-5 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Logo 3" class="h-5 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678" alt="WH" class="h-5 md:h-7">
+
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Women's Health" class="h-5 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678" alt="Grazia" class="h-5 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Logo 3" class="h-5 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678" alt="WH" class="h-5 md:h-7">
+
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Women's Health" class="h-6 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678" alt="Grazia" class="h-6 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Logo 3" class="h-6 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678" alt="WH" class="h-6 md:h-7">
+
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Women's Health" class="h-6 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/Grazia-Logo_1_500x.png?v=1752348678" alt="Grazia" class="h-6 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/layer1_500x.png?v=1752348678" alt="Logo 3" class="h-6 md:h-7">
+                <img src="//trysculptique.com/cdn/shop/files/WH_Logo_500x.png?v=1752348678" alt="WH" class="h-6 md:h-7">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="max-w-[800px] mx-auto px-3 pt-10 md:pt-20 pb-10 text-center">
+    <h2 class="font-['Lora'] text-[24px] md:text-[32px] leading-tight mb-6 md:mb-8">
+        Why Your <span class="text-[#039869]">Bloating, Brain Fog & Swollen Legs</span> Are Actually Connected
+    </h2>
+
+    <p class="font-['Nunito'] text-[16px] md:text-[18px] max-w-[800px] mx-auto leading-relaxed px-4 md:px-0">
+        If you're experiencing more than one of these symptoms, your body is trying to tell you something: 
+    </p>
+</section>
+
+
+
+<section class="max-w-[1240px] mx-auto px-4 md:px-0">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        
+        <div class="symptom-card flex flex-row md:flex-col gap-0 md:gap-[10px] h-full bg-[#f7f7f7] md:bg-transparent rounded-[8px] overflow-hidden md:overflow-visible shadow-sm md:shadow-none border border-gray-100 md:border-none">
+            <div class="w-1/2 md:w-full h-auto md:h-[184px] overflow-hidden rounded-l-[8px] md:rounded-t-[8px] md:rounded-l-none shadow-sm border border-gray-100">
+                <img src="//trysculptique.com/cdn/shop/files/Untitled_design_3.png?v=1760689800" 
+                     alt="Bloating" 
+                     class="w-full h-full object-cover cursor-pointer">
+            </div>
+            
+            <div class="w-1/2 md:w-full bg-[#f7f7f7] px-4 md:px-5 py-3 md:pt-3 md:pb-5 flex-grow flex items-center md:items-start justify-center min-h-[100px] md:min-h-[140px] shadow-sm border border-gray-100 rounded-r-[8px] md:rounded-b-[8px] md:rounded-r-none">
+                <p class="font-['Nunito'] text-[16px] md:text-[16px] text-center leading-tight md:leading-relaxed">
+                    Your stomach is flat in the morning, but by evening you look six months pregnant.
+                </p>
+            </div>
+        </div>
+
+        <div class="symptom-card flex flex-row md:flex-col gap-0 md:gap-[10px] h-full bg-[#f7f7f7] md:bg-transparent rounded-[8px] overflow-hidden md:overflow-visible shadow-sm md:shadow-none border border-gray-100 md:border-none">
+            <div class="w-1/2 md:w-full h-auto md:h-[184px] overflow-hidden rounded-l-[8px] md:rounded-t-[8px] md:rounded-l-none shadow-sm border border-gray-100">
+                <img src="//trysculptique.com/cdn/shop/files/Untitled_design_3_1.png?v=1760689799" 
+                     alt="Bloating" 
+                     class="w-full h-full object-cover cursor-pointer">
+            </div>
+            <div class="w-1/2 md:w-full bg-[#f7f7f7] px-4 md:px-5 py-3 md:pt-3 md:pb-5 flex-grow flex items-center md:items-start justify-center min-h-[100px] md:min-h-[140px] shadow-sm border border-gray-100 rounded-r-[8px] md:rounded-b-[8px] md:rounded-r-none">
+                <p class="font-['Nunito'] text-[16px] md:text-[16px] text-center leading-tight md:leading-relaxed">
+                    Your ankles disappear into "kankles" by the end of the day.
+                </p>
+            </div>
+        </div>
+
+        <div class="symptom-card flex flex-row md:flex-col gap-0 md:gap-[10px] h-full bg-[#f7f7f7] md:bg-transparent rounded-[8px] overflow-hidden md:overflow-visible shadow-sm md:shadow-none border border-gray-100 md:border-none">
+            <div class="w-1/2 md:w-full h-auto md:h-[184px] overflow-hidden rounded-l-[8px] md:rounded-t-[8px] md:rounded-l-none shadow-sm border border-gray-100">
+                <img src="//trysculptique.com/cdn/shop/files/Untitled_design_4.png?v=1760689801" 
+                     alt="Bloating" 
+                     class="w-full h-full object-cover cursor-pointer">
+            </div>
+            <div class="w-1/2 md:w-full bg-[#f7f7f7] px-4 md:px-5 py-3 md:pt-3 md:pb-5 flex-grow flex items-center md:items-start justify-center min-h-[100px] md:min-h-[140px] shadow-sm border border-gray-100 rounded-r-[8px] md:rounded-b-[8px] md:rounded-r-none">
+                <p class="font-['Nunito'] text-[16px] md:text-[16px] text-center leading-tight md:leading-relaxed">
+                    That dimpled, cottage cheese texture on your thighs won't go away no matter what you try.
+                </p>
+            </div>
+        </div>
+
+        <div class="symptom-card flex flex-row md:flex-col gap-0 md:gap-[10px] h-full bg-[#f7f7f7] md:bg-transparent rounded-[8px] overflow-hidden md:overflow-visible shadow-sm md:shadow-none border border-gray-100 md:border-none">
+            <div class="w-1/2 md:w-full h-auto md:h-[184px] overflow-hidden rounded-l-[8px] md:rounded-t-[8px] md:rounded-l-none shadow-sm border border-gray-100">
+                <img src="//trysculptique.com/cdn/shop/files/Untitled_design_4_1.png?v=1760689799" 
+                     alt="Bloating" 
+                     class="w-full h-full object-cover cursor-pointer">
+            </div>
+            <div class="w-1/2 md:w-full bg-[#f7f7f7] px-4 md:px-5 py-3 md:pt-3 md:pb-5 flex-grow flex items-center md:items-start justify-center min-h-[100px] md:min-h-[140px] shadow-sm border border-gray-100 rounded-r-[8px] md:rounded-b-[8px] md:rounded-r-none">
+                <p class="font-['Nunito'] text-[16px] md:text-[16px] text-center leading-tight md:leading-relaxed">
+                    You feel foggy and exhausted even after a full night's sleep.
+                </p>
+            </div>
+        </div>
+
+        <div class="symptom-card flex flex-row md:flex-col gap-0 md:gap-[10px] h-full bg-[#f7f7f7] md:bg-transparent rounded-[8px] overflow-hidden md:overflow-visible shadow-sm md:shadow-none border border-gray-100 md:border-none">
+            <div class="w-1/2 md:w-full h-auto md:h-[184px] overflow-hidden rounded-l-[8px] md:rounded-t-[8px] md:rounded-l-none shadow-sm border border-gray-100">
+                <img src="//trysculptique.com/cdn/shop/files/Untitled_design_3_2.png?v=1760689799" 
+                     alt="Bloating" 
+                     class="w-full h-full object-cover cursor-pointer">
+            </div>
+            <div class="w-1/2 md:w-full bg-[#f7f7f7] px-4 md:px-5 py-3 md:pt-3 md:pb-5 flex-grow flex items-center md:items-start justify-center min-h-[100px] md:min-h-[140px] shadow-sm border border-gray-100 rounded-r-[8px] md:rounded-b-[8px] md:rounded-r-none">
+                <p class="font-['Nunito'] text-[16px] md:text-[16px] text-center leading-tight md:leading-relaxed">
+                    You wake up stiff and achy, like your body aged overnight.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+<section class="max-w-[930px] mx-auto px-1 text-center">
+
+    <!-- Mobile image -->
+    <img
+        src="//trysculptique.com/cdn/shop/files/Frame_1000003583.png?v=1760690769"
+        alt="Root Cause Connection"
+        class="block md:hidden w-full h-auto px-4 pt-6 pb-0"
+    >
+
+    <!-- Desktop image -->
+    <img
+        src="//trysculptique.com/cdn/shop/files/Group_7207.png?v=1760690771"
+        alt="Root Cause Connection"
+        class="hidden md:block w-full h-auto"
+    >
+
+    <div class="my-6 flex justify-center">
+        <img
+            class="w-[34px] h-[46px] md:w-[48px] md:h-[65px]"
+            src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Frame_1000003589.png?v=1760690549"
+            alt=""
+        >
+    </div>
+
+    <h2 class="font-['Lora'] text-[24px] md:text-[32px] leading-[1.3em] mb-5 px-2">
+        The Connection <span class="text-[#039869]">You've Been Missing</span>
+    </h2>
+
+</section>
+
+
+<section class="max-w-[930px] mx-auto px-1">
+
+    <!-- Mobile image -->
+    <img
+        src="//trysculptique.com/cdn/shop/files/Frame_1000003590_1.png?v=1760690770"
+        alt="Symptom vs Real Cause Table"
+        class="block md:hidden w-full h-auto px-3"
+    >
+
+    <!-- Desktop image -->
+    <img
+        src="//trysculptique.com/cdn/shop/files/Frame_1000003590.png?v=1760690771"
+        alt="Symptom vs Real Cause Table"
+        class="hidden md:block w-full h-auto"
+    >
+
+    <!-- Center icon -->
+    <div class="mt-3 mb-6 md:mt-6 flex justify-center">
+        <img
+            src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Frame_1000003589.png?v=1760690549"
+            class="w-[34px] h-[46px] md:w-[48px] md:h-[65px]"
+            alt=""
+        >
+    </div>
+
+</section>
+
+
+<section class="px-4 md:px-0 max-w-[1240px] mx-auto">
+    <div class="text-center mb-12">
+        <h2 class="font-['Lora'] text-[24px] md:text-[32px]">
+            Your <span class="text-[#039869]">Hidden</span> Drainage System
+        </h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-24 items-start">
+
+        <!-- BLOCK CHỮ TRÁI -->
+        <div class="order-2 lg:order-1 font-['Nunito'] text-[16px] md:text-[18px] leading-relaxed">
+            <p>
+                Your lymphatic system is your body's internal cleaning crew—a network of vessels that processes 
+                <strong>3-4 liters of cellular waste and excess fluid every single day.</strong>
+            </p>
+
+            <p>When it's working properly, you don't even know it exists.</p>
+
+            <div class="space-y-1 py-2">
+                <div class="flex items-center gap-3 text-[#039869] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838" class="w-5 h-5 object-contain">
+                    <span>Waste gets drained away</span>
+                </div>
+                <div class="flex items-center gap-3 text-[#039869] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838" class="w-5 h-5 object-contain">
+                    <span>Fluid stays balanced.</span>
+                </div>
+                <div class="flex items-center gap-3 text-[#039869] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/check-mark_17013456_2_1.png?v=1760702838" class="w-5 h-5 object-contain">
+                    <span>Your body feels light and energized.</span>
+                </div>
+            </div>
+
+            <div class="bg-[#ffe3e3] border-none border-red-400 p-4 rounded-[8px]">
+                <p>But after age 35, declining estrogen hijacks this system's ability to function.</p>
+            </div>
+
+            <div class="space-y-1 py-2">
+                <div class="flex items-center gap-3 text-[#a60003] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                    <span>Vessel pumping weakens.</span>
+                </div>
+                <div class="flex items-center gap-3 text-[#a60003] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                    <span>One-way valves fail.</span>
+                </div>
+                <div class="flex items-center gap-3 text-[#a60003] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                    <span>Protein clogs form.</span>
+                </div>
+                <div class="flex items-center gap-3 text-[#a60003] font-semibold">
+                    <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                    <span>Vessel walls become leaky.</span>
+                </div>
+            </div>
+
+            <p class="pt-1">
+                Instead of processing and removing waste, it backs up in your tissues.
+            </p>
+        </div>
+
+        <!-- ẢNH CHART -->
+        <div class="order-1 lg:order-2">
+            <img src="//trysculptique.com/cdn/shop/files/Frame_1484580366_1.png?v=1760701546"
+                 class="w-full h-auto">
+        </div>
+
+        <!-- ẢNH ĐỎ -->
+        <div class="order-3 lg:order-3 flex items-center gap-3 text-[#a60003] font-semibold">
+            <img src="//trysculptique.com/cdn/shop/files/ChatGPT_Image_Oct_10_2025_at_03_26_38_PM_2.png?v=1760702096"
+                 class="w-auto object-contain">
+        </div>
+
+        <!-- BLOCK CHỮ PHẢI -->
+        <div class="order-4 lg:order-4 font-['Nunito'] text-[18px] leading-snug space-y-5 pt-0 lg:pt-10 lg:-mt-24 lg:pb-10">
+            <div class="space-y-4">
+                <p class="font-bold">And it accumulates. Day after day. Week after week.</p>
+                <p>
+                    That gallon of fluid your body should be draining every 24 hours? 
+                    It's pooling in your stomach, your legs, your face—anywhere gravity and tissue structure allow it to settle.
+                </p>
+            </div>
+
+            <div class="bg-[#ffe3e3] p-6 rounded-[8px] space-y-4">
+                <p>
+                    The metabolic waste your cells produce overnight? It's still sitting there at noon.
+                </p>
+
+                <div class="space-y-2 text-[#a60003] font-semibold">
+                    <div class="flex items-center gap-2">
+                        <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                        <span>That's why you're bloated.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                        <span>That's why your ankles swell.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                        <span>That's why you see cellulite.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <img src="https://trysculptique.com/cdn/shop/files/Vector_7.png?v=1760702839" class="w-5 h-5 object-contain">
+                        <span>That's why you feel exhausted and foggy.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-4 pt-2">
+                <p class="font-bold">
+                    Your cells are literally sitting in their own waste—and your body can't flush it out.
+                </p>
+                <p>
+                    The longer this goes on, the worse it gets. More congestion. More inflammation. More pressure on an already compromised system.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<section class="w-full mx-auto mt-10 px-4 text-center bg-[#f7f2e7]">
+  <h2 class="font-['Lora'] text-[24px] md:text-[32px] mb-8">
+    Why Nothing Has <span class="text-[#039869]">Worked</span>
+  </h2>
+
+  <div class="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+    
+    <!-- Cột 1 -->
+    <div class="bg-white rounded-[6px] overflow-hidden shadow-sm flex flex-col border border-gray-50 h-full">
+      <div class="h-[290px]">
+        <img src="//trysculptique.com/cdn/shop/files/X1.jpg?v=1760943360" class="w-full h-full object-cover" alt="Diet failure">
+      </div>
+
+      <div class="px-4 py-6 flex flex-col flex-1">
+        <p class="font-['Trirong'] text-[20px] mb-4 h-[60px] flex items-center justify-center">You cut out gluten, dairy, sugar. You ate clean for months.</p>
+        <div class="bg-[#ffe3e3] p-3 rounded-[4px] flex-1 flex flex-col">
+          <div class="flex items-center gap-1 mb-2 justify-center">
+            <span class="text-[16px] font-['Nunito'] font-semibold">Why it failed</span>
+            <img class="w-5 h-5 object-contain" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853">
+          </div>
+          <p class="text-[16px] font-['Nunito'] leading-[1.3em] font-bold">Your diet only addressed what goes IN. It didn't fix your body's broken ability to drain what's already there.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cột 2 -->
+    <div class="bg-white rounded-[6px] overflow-hidden shadow-sm flex flex-col border border-gray-50 h-full">
+      <div class="h-[290px]">
+        <img src="//trysculptique.com/cdn/shop/files/X2.jpg?v=1760943359" class="w-full h-full object-cover" alt="Drops failure">
+      </div>
+      <div class="px-4 py-6 flex flex-col flex-1">
+        <p class="font-['Trirong'] text-[20px] mb-4 h-[60px] flex items-center justify-center">You tried viral lymphatic drops from TikTok.</p>
+        <div class="bg-[#ffe3e3] p-3 rounded-[4px] flex-1 flex flex-col">
+          <div class="flex items-center gap-1 mb-2 justify-center">
+            <span class="text-[16px] font-['Nunito'] font-semibold">Why it failed</span>
+            <img class="w-5 h-5 object-contain" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853">
+          </div>
+          <p class="text-[16px] font-['Nunito'] leading-[1.3em] font-bold">They're just pricey water with trace herbs. The "active ingredients" are destroyed by stomach acid, and even if absorbed, only act as a mild diuretic. No vessel repair, no protein breakdown—just expensive urine.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cột 3 -->
+    <div class="bg-white rounded-[6px] overflow-hidden shadow-sm flex flex-col border border-gray-50 h-full">
+      <div class="h-[290px]">
+        <img src="//trysculptique.com/cdn/shop/files/X3.jpg?v=1760943359" class="w-full h-full object-cover" alt="Massage failure">
+      </div>
+      <div class="px-4 py-6 flex flex-col flex-1">
+        <p class="font-['Trirong'] text-[20px] mb-4 h-[60px] flex items-center justify-center">You got lymphatic massage or bought compression socks.</p>
+        <div class="bg-[#ffe3e3] p-3 rounded-[4px] flex-1 flex flex-col">
+          <div class="flex items-center gap-1 mb-2 justify-center">
+            <span class="text-[16px] font-['Nunito'] font-semibold">Why it failed</span>
+            <img class="w-5 h-5 object-contain" src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Vector_6.png?v=1760696853">
+          </div>
+          <p class="text-[16px] font-['Nunito'] leading-[1.3em] font-bold">Temporary manual movement. Within 24-48 hours, everything backed up again because your vessels still can't pump.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="max-w-[920px] mx-auto">
+  
+  <!-- Desktop image -->
+  <img 
+    src="//trysculptique.com/cdn/shop/files/Group_7207_1.png?v=1760694176"
+    alt="The Missing Piece: Comprehensive lymphatic restoration"
+    class="hidden md:block w-full h-auto"
+  >
+
+  <!-- Mobile image -->
+  <img 
+    src="//trysculptique.com/cdn/shop/files/Frame_1000003583_1.png?v=1760694176"
+    alt="The Missing Piece: Comprehensive lymphatic restoration"
+    class="block md:hidden w-full h-auto pt-6"
+  >
+
+  <div class="mt-6 text-center">
+    <button class="bg-black text-white text-[16px] md:text-[18px] font-['Nunito'] font-bold py-4 px-16 md:px-20 rounded-[4px] hover:bg-black/70 tracking-wide cursor-pointer">
+      Try Lymphatic Drainage Risk-Free
+    </button>
+
+    <div class="mt-6 flex items-center justify-center gap-4 pb-[70px]">
+      <img 
+        src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395"
+        class="w-6 h-6"
+        alt="Guarantee"
+      >
+      <p class="text-[16px] font-['Nunito'] font-bold">
+        60 day money-back guarantee
+      </p>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="w-full mx-auto py-8 md:py-16 px-4 bg-[#f7f2e7] mt-9">
+  <div class="max-w-[1240px] mx-auto">
+    
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <h2 class="font-['Lora'] text-[24px] md:text-[32px] mb-4">
+        <span class="text-[#039869]">The 8-Ingredient System</span> That Restores What<br>Hormones Once Maintained
+      </h2>
+      <div class="max-w-3xl mx-auto text-center item-center">
+  <p class="text-[16px] font-['Nunito'] md:text-[18px] mb-3">
+    Sculptique is the only formula that addresses ALL 6 mechanisms of lymphatic dysfunction simultaneously—not with symbolic doses, but with therapeutic amounts based on clinical research.
+  </p>
+  <p class="text-[16px] font-['Nunito'] md:text-[18px]">
+    Not just moving fluid temporarily. Not just reducing inflammation. <strong>Complete restoration.</strong>
+  </p>
+</div>
+
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-2 border-black rounded-[10px] overflow-hidden bg-white">
+      
+        <!-- Item 1: Cleavers Extract -->
+  <div class="border-r border-b border-black">
+    <div class="p-6 cursor-pointer" onclick="toggleIngredient(1)">
+
+      <!-- Label -->
+      <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" class="w-4 h-4 object-contain">
+        <span class="text-[16px] md:text-[16px] font-['Nunito']">Reactivate Lymphatic Pumps</span>
+      </div>
+
+      <!-- Image + Title (mobile row / desktop column) -->
+      <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+        <img src="//trysculptique.com/cdn/shop/files/Frame_1484580382.png?v=1760698909"
+             alt="Cleavers Extract"
+             class="h-12 md:h-20 object-contain">
+
+        <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+          <h3 class="font-bold text-[14px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+            Cleavers Extract (100mg)
+          </h3>
+          <svg id="arrow-1" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-1" class="ingredient-content px-6 pb-6">
+      <p class="text-[14px] leading-relaxed">
+        Restores rhythmic vessel contractions that move lymph through your system. Contains iridoids that "wake up" muscle cells in vessel walls. 2024 study showed enhanced immune cell activity for better waste clearance.
+        <br><br>
+        <span class="font-['Nunito']">[Study: Enhanced NK cell activity in immunosuppressed models]</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 2: Dandelion Extract -->
+  <div class="border-r border-b border-black">
+    <div class="p-6 cursor-pointer" onclick="toggleIngredient(2)">
+
+      <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" class="w-4 h-4 object-contain">
+        <span class="text-[16px] md:text-[16px] font-['Nunito']">Flush Excess Fluid</span>
+      </div>
+
+      <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+        <img src="//trysculptique.com/cdn/shop/files/Frame_1484580382_1.png?v=1760939908"
+             alt="Dandelion"
+             class="h-12 md:h-20 object-contain">
+
+        <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+          <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+            Dandelion Extract (250mg)
+          </h3>
+          <svg id="arrow-2" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-2" class="ingredient-content px-6 pb-6">
+      <p class="text-[14px] leading-relaxed">
+        Proven gentle diuretic that increases fluid excretion without harsh side effects. Human trial showed statistically significant increase in urination frequency (p&lt;0.05) and excretion ratio (p&lt;0.001).
+        <br><br>
+        <span class="font-['Nunito']">[Study: First human pilot study on diuretic effects]</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 3: Bromelain Powder -->
+  <div class="border-r border-b border-black">
+    <div class="p-6 cursor-pointer" onclick="toggleIngredient(3)">
+
+      <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" class="w-4 h-4 object-contain">
+        <span class="text-[16px] md:text-[16px] font-['Nunito']">Break Down Protein Clogs</span>
+      </div>
+
+      <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+        <img src="//trysculptique.com/cdn/shop/files/image_3.png?v=1760939909"
+             alt="Bromelain"
+             class="h-12 md:h-20 object-contain">
+
+        <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+          <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+            Bromelain Powder (100mg)
+          </h3>
+          <svg id="arrow-3" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-3" class="ingredient-content px-6 pb-6">
+      <p class="text-[14px] leading-relaxed">
+        Proteolytic enzyme that clears blockages preventing fluid drainage. Breaks down fibrin proteins creating "sludge" in vessels. 2024 RCT showed significantly greater reductions in swelling than placebo.
+        <br><br>
+        <span class="font-['Nunito']">[Study: As effective as prescription NSAIDs for inflammation]</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Item 4: Rutin -->
+  <div class="border-b border-black">
+    <div class="p-6 cursor-pointer" onclick="toggleIngredient(4)">
+
+      <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419" class="w-4 h-4 object-contain">
+        <span class="text-[16px] md:text-[16px] font-['Nunito']">Strengthen Vessel Walls</span>
+      </div>
+
+      <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+        <img src="//trysculptique.com/cdn/shop/files/image_3.png?v=1760939909"
+             alt="Rutin"
+             class="h-12 md:h-20 object-contain">
+
+        <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+          <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+            Rutin (100mg)
+          </h3>
+          <svg id="arrow-4" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="content-4" class="ingredient-content px-6 pb-6">
+      <p class="text-[14px] leading-relaxed">
+        Reduces vessel permeability so fluid doesn't leak back into tissues. Clinical trials showed average 4.2 cm reduction in limb circumference over 6 months in lymphedema patients.
+        <br><br>
+        <span class="font-['Nunito']">[Study: Systematic review of 1,643 participants]</span>
+      </p>
+    </div>
+  </div>
+
+<!-- Item 5: Burdock Root Powder -->
+<div class="border-r border-b border-black md:border-b-0">
+  <div class="p-6 cursor-pointer" onclick="toggleIngredient(5)">
+
+    <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+      <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419"
+           class="w-4 h-4 object-contain">
+      <span class="text-[16px] md:text-[16px] font-['Nunito']">Reduce Inflammation</span>
+    </div>
+
+    <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+      <img src="//trysculptique.com/cdn/shop/files/Frame_1484580382_2.png?v=1760939909"
+           alt="Burdock Root"
+           class="h-12 md:h-20 object-contain">
+
+      <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+        <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+          Burdock Root Powder (200mg)
+        </h3>
+        <svg id="arrow-5" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-5" class="ingredient-content px-6 pb-6">
+    <p class="text-[14px] leading-relaxed">
+      Breaks the inflammation-congestion cycle. RCT showed significantly decreased inflammatory markers IL-6 and C-reactive protein (p&lt;0.001). Also supports hormonal balance.
+      <br><br>
+      <span class="font-['Nunito']">[Study: 42-day trial in osteoarthritis patients]</span>
+    </p>
+  </div>
+</div>
+
+
+<!-- Item 6: Echinacea -->
+<div class="border-r border-b border-black lg:border-r md:border-b-0">
+  <div class="p-6 cursor-pointer" onclick="toggleIngredient(6)">
+
+    <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+      <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419"
+           class="w-4 h-4 object-contain">
+      <span class="text-[16px] md:text-[16px] font-['Nunito']">Boost Immune Clearance</span>
+    </div>
+
+    <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+      <img src="//trysculptique.com/cdn/shop/files/image_4.png?v=1760939909"
+           alt="Echinacea"
+           class="h-12 md:h-20 object-contain">
+
+      <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+        <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+          Echinacea Purpurea Extract (500mg)
+        </h3>
+        <svg id="arrow-6" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-6" class="ingredient-content px-6 pb-6">
+    <p class="text-[14px] leading-relaxed">
+      Enhances lymphocyte activity for better waste removal. Meta-analysis of 30 trials with 5,600+ participants showed 40% reduction in recurrent infections.
+      <br><br>
+      <span class="font-['Nunito']">[Study: Increased NK cell cytotoxic activity]</span>
+    </p>
+  </div>
+</div>
+
+
+<!-- Item 7: Kelp Extract -->
+<div class="border-r border-b border-black lg:border-r md:border-b-0">
+  <div class="p-6 cursor-pointer" onclick="toggleIngredient(7)">
+
+    <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+      <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419"
+           class="w-4 h-4 object-contain">
+      <span class="text-[16px] md:text-[16px] font-['Nunito']">Support Metabolism</span>
+    </div>
+
+    <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+      <img src="//trysculptique.com/cdn/shop/files/Frame_1484580382_3.png?v=1760939909"
+           alt="Kelp"
+           class="h-12 md:h-20 object-contain">
+
+      <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+        <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+          Kelp Extract (30mg)
+        </h3>
+        <svg id="arrow-7" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-7" class="ingredient-content px-6 pb-6">
+    <p class="text-[14px] leading-relaxed">
+      Provides iodine for thyroid function and healthy metabolic rate. Sluggish thyroid = sluggish lymphatic drainage. Contains fucoxanthin shown to reduce body fat in human trials.
+      <br><br>
+      <span class="font-['Nunito']">[Study: Dose-dependent increase in TSH levels]</span>
+    </p>
+  </div>
+</div>
+
+
+<!-- Item 8: Lemon Powder -->
+<div class="border-r border-b border-black lg:border-r md:border-b-0">
+  <div class="p-6 cursor-pointer" onclick="toggleIngredient(8)">
+
+    <div class="flex items-center justify-center gap-2 text-[#0c7c00] mb-4 text-center">
+      <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/check-mark_17013456_2.png?v=1760698419"
+           class="w-4 h-4 object-contain">
+      <span class="text-[16px] md:text-[16px] font-['Nunito']">Antioxidant Protection</span>
+    </div>
+
+    <div class="flex flex-row md:flex-col items-center gap-4 md:gap-0">
+      <img src="//trysculptique.com/cdn/shop/files/Frame_1484580382_4.png?v=1760939910"
+           alt="Lemon"
+           class="h-12 md:h-20 object-contain">
+
+      <div class="flex items-center justify-between w-full mt-0 md:mt-4">
+        <h3 class="font-bold text-[15px] md:text-[16px] font-['Trirong'] leading-[1.3em]">
+          Lemon Powder (50mg)
+        </h3>
+        <svg id="arrow-8" class="arrow-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-8" class="ingredient-content px-6 pb-6">
+    <p class="text-[14px] leading-relaxed">
+      Protects vessels from oxidative damage. RCT showed 145% improvement in vascular function (p&lt;0.001). Supports circulation and metabolic health.
+      <br><br>
+      <span class="font-['Nunito']">[Study: Triple-masked trial in 90 participants]</span>
+    </p>
+  </div>
+</div>
+
+
+    </div>
+
+  </div>
+
+<div class="max-w-xl mx-auto pt-10">
+  <!-- Mobile -->
+  <img
+    src="//trysculptique.com/cdn/shop/files/Frame_1000003583_3.png?v=1760697982"
+    class="block md:hidden w-full"
+    alt=""
+  >
+
+  <!-- Desktop -->
+  <img
+    src="//trysculptique.com/cdn/shop/files/Frame_1000003583_2.png?v=1760697982"
+    class="hidden md:block w-full"
+    alt=""
+  >
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-white py-8 md:py-14 px-8 font-['Nunito']">
+  <div class="max-w-7xl mx-auto">
+    
+    <div class="text-center mb-10">
+      <div class="flex justify-center items-center gap-1 mb-4">
+        <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_Score.png?v=1752349211" alt="Trustpilot" class="h-[18px] md:h-5">
+      </div>
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-[24px] md:text-[32px] font-['Lora'] mb-4 leading-tight">
+        Real Women, Real Results: 93,000+ Transformations
+      </h2>
+      <p class="text-[16px] md:text-[18px] font-['Nunito']">All reviews verified from actual paying customers</p>
+      </div>
+    </div>
+
+<div class="max-w-[1240px] mx-auto px-8 bg-white">
+  <h3 class="text-center text-[24px] font-['Trirong']">Customer Reviews</h3>
+  
+  <div class="flex flex-col md:flex-row items-center justify-between py-6 border-b border-gray-50">
+    
+    <!-- CỘT TRÁI: RATING TỔNG -->
+    <div class="flex-1 flex flex-col items-center justify-center px-4">
+      <div class="flex items-center gap-2 mb-2">
+
+        <!-- STAR OVERLAY -->
+        <div class="relative inline-block text-[16px] leading-none">
+
+          <!-- SAO NỀN -->
+          <div class="flex gap-[2px] text-gray-200">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <!-- SAO PHỦ -->
+          <div
+            class="absolute top-0 left-0 overflow-hidden"
+            style="width: 93.4%"
+          >
+            <div class="flex gap-[2px] text-[#ff9595]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <span class="text-[16px] font-['Montserrat'] text-[#4a4a4a] ml-1">
+          4.67 out of 5
+        </span>
+      </div>
+
+      <div class="text-gray-500 text-[16px] font-['Montserrat'] flex items-center gap-2 pb-4 md:pb-0">
+        Based on 110 reviews 
+        <img src="https://judgeme-public-images.imgix.net/judgeme/logos/verified-checkmark.svg">
+      </div>
+    </div>
+
+    <!-- CỘT GIỮA: PHÂN BỐ SAO -->
+<div class="flex-[1.5] w-full max-w-sm px-10 border-l border-r border-gray-100 space-y-1.5">
+
+      <div class="flex items-center gap-3">
+        <span class="text-[#ff9595] text-xs w-20 flex gap-[1px]">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </span>
+        <div class="flex-1 bg-[#f0f0f0] h-[14px]">
+          <div class="bg-[#ff9595] h-full" style="width: 76%"></div>
+        </div>
+        <span class="text-[13px] font-['Montserrat'] text-gray-500 w-6 text-left">84</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="text-[#ff9595] text-xs w-20 flex gap-[1px]">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </span>
+        <div class="flex-1 bg-[#f0f0f0] h-[14px]">
+          <div class="bg-[#ff9595] h-full" style="width: 15%"></div>
+        </div>
+        <span class="text-[13px] font-['Montserrat'] text-gray-500 w-6 text-left">17</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="text-[#ff9595] text-xs w-20 flex gap-[1px]">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </span>
+        <div class="flex-1 bg-[#f0f0f0] h-[14px]">
+          <div class="bg-[#ff9595] h-full" style="width: 7%"></div>
+        </div>
+        <span class="text-[13px] font-['Montserrat'] text-gray-500 w-6 text-left">8</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="text-[#ff9595] text-xs w-20 flex gap-[1px]">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </span>
+        <div class="flex-1 bg-[#f0f0f0] h-[14px]">
+          <div class="bg-[#ff9595] h-full" style="width: 1%"></div>
+        </div>
+        <span class="text-[13px] font-['Montserrat'] text-gray-500 w-6 text-left">1</span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <span class="text-[#ff9595] text-xs w-20 flex gap-[1px]">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </span>
+        <div class="flex-1 bg-[#f0f0f0] h-[14px]">
+          <div class="bg-[#ff9595] h-full" style="width: 0%"></div>
+        </div>
+        <span class="text-[13px] font-['Montserrat'] text-gray-500 w-6 text-left">0</span>
+      </div>
+
+    </div>
+
+    <!-- CỘT PHẢI: BUTTON -->
+    <div class="flex-1 flex justify-center px-4 pt-4 md:pt-0">
+      <button class="bg-[#ff9595] text-white px-16 py-1.5 font-['Nunito'] text-[18px] font-bold hover:opacity-90 transition-all shadow-sm">
+        Write a review
+      </button>
+    </div>
+  </div>
+
+  <!-- AUTHENTICITY -->
+  <div class="mt-8 flex flex-col items-center">
+    <img
+      src="https://judgeme-public-images.imgix.net/judgeme/medals-v2-2025-rebranding/auth/diamond.svg?auto=format"
+      alt="Authenticity"
+      class="w-20 opacity-80"
+    >
+    <span class="text-[#4c8eda] font-bold text-[12px] font-['Nunito', sanf] mt-1 mb-6">100.0</span>
+  </div>
+</div>
+
+
+
+    <div class="flex flex-col items-start border-y border-gray-100 mb-4">
+      <div class="relative py-4">
+         <div class="w-32 flex items-center justify-between cursor-pointer bg-white" id="dropdownBtn" onclick="toggleDropdown()">
+          <span id="selectedOption" class="text-[14px] text-[#fa8a8a] hover:text-[#ffb3b3] cursor-pointer transition-colors duration-200">Most Recent</span>
+          <svg class="w-4 h-4 text-[#FA8A8A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7" stroke-width="2"></path></svg>
+        </div>
+        <div id="dropdownMenu" class="hidden absolute left-0 top-full mt-1 w-48 bg-white border border-gray-200 shadow-lg z-10">
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Most Recent')">Most Recent</div>
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Highest Rating')">Highest Rating</div>
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Lowest Rating')">Lowest Rating</div>
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Only Pictures')">Only Pictures</div>
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Only Pictures')">Pictures First</div>
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Only Pictures')">Video First</div>
+          <div class="px-4 py-2 hover:bg-gray-50 cursor-pointer text-[#ff8a8a] text-sm" onclick="selectFilter('Only Pictures')">Most Helpful</div>
+        </div>
+      </div>
+    </div>
+
+<div class="space-y-10">
+
+   <!-- LOADING OVERLAY -->
+  <div
+    id="loading"
+    class="absolute inset-0 bg-white/70 flex items-center justify-center z-10 hidden"
+  >
+    <div class="w-8 h-8 border-2 border-[#ff8a8a] border-t-transparent rounded-full animate-spin"></div>
+  </div>
+
+  <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">12/08/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      Pretty sure I'm seeing improvement in the smoothness of my skin after 30 days.
+      Will continue with confidence it's working.
+    </p>
+
+  </div>
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">12/01/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      One month and I’ve already seen a difference!
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/23/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Donabeth Houx</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      I LOVE THEM! My legs have gone from late stage 2 to late one!!! Oh my gosh! It’s a miracle! I no longer have to worry about elephantitus in my future! Thank you so much!!!!!!
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/17/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Dawn Camacho </span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      It took me about 60 days to notice a difference in smoothness. My husband noticed which is why I purchased another round. I'm happy.
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/13/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      I have noticed a difference on my swelling.
+    </p>
+
+  </div>
+
+
+
+
+
+  <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/10/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      starting to see results after one bottle
+      Will continue with confidence it's working.
+    </p>
+
+  </div>
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/09/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Lynda Sandora</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      Whenever I am sitting or laying down for awhile, I’m really stiff & I feel like my lower body doesn’t belong to me. Almost immediately after taking these pills, I am no longer stiff & I move with ease! Thank you!
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/09/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Meg Christie</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      I had been having post menopausal acne, it has cleared up!
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/08/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      Excellent product
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/08/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      Love it! 😍
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">11/08/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Agnes Oates</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      I love this product and I see the benefits of it 🙌🏽
+    </p>
+
+  </div>
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">10/23/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Anonymous</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      One month and I’ve already seen a difference!
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">10/16/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Kelly Serre</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      So far, I am happy.
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">10/16/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Barbara Jean</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      My skin is feeling so soft!
+    </p>
+
+  </div>
+
+
+    <!-- REVIEW ITEM -->
+  <div class="review-item border-b border-gray-100 pb-8 space-y-3">
+
+    <!-- ⭐ Stars + Date -->
+    <div class="flex justify-between items-center">
+      <div class="flex gap-[2px] text-[#ff8a8a] text-[16px]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <span class="text-gray-500 text-[13px] font-['Montserrat']">10/15/2025</span>
+    </div>
+
+    <!-- Avatar + Name + Verified -->
+    <div class="flex items-start gap-3">
+      <div class="relative w-9 h-9 bg-[#e0e0e080] flex items-center justify-center text-[#ff8a8a]">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+        </svg>
+
+        <!-- VERIFIED TICK -->
+  <div class="absolute bottom-0 right-0 w-3 h-3 bg-[#FA8A8A] flex items-center justify-center">
+    <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+      <path
+        fill-rule="evenodd"
+        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </div>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span class="text-[#FA8A8A] font-['Montserrat'] text-[15px] md:text-[16px]">Lisa Leyva</span>
+        <span class="bg-[#FA8A8A] text-white text-[13px] font-['Montserrat']  px-2 py-[1.5px] leading-none">
+          Verified
+        </span>
+      </div>
+    </div>
+
+    <!-- Review content -->
+    <p class="text-[15px] md:text-[16px] font-['Nunito'] leading-relaxed">
+      I love this product. Combined with a fitness program I feel like it's producing tremendous results. I'll be ordering more in the future.
+    </p>
+
+  </div>
+
+
+
+</div>
+
+
+
+<div
+  id="pagination"
+  class="flex justify-center items-center gap-5 mt-4 mb-10 font-['Montserrat'] text-[16px]"
+>
+  <button data-action="first" class="nav-btn text-[#ff8a8a] text-[20px] font-bold">
+    &laquo;
+  </button>
+
+  <button data-action="prev" class="nav-btn text-[#ff8a8a] text-[20px] font-bold">
+    &lsaquo;
+  </button>
+
+  <button data-page="1" class="page-btn text-[#ff8a8a]">1</button>
+  <button data-page="2" class="page-btn text-[#ff8a8a]">2</button>
+  <button data-page="3" class="page-btn text-[#ff8a8a]">3</button>
+  <button data-page="4" class="page-btn text-[#ff8a8a]">4</button>
+  <button data-page="5" class="page-btn text-[#ff8a8a]">5</button>
+
+  <button data-action="next" class="nav-btn text-[#ff8a8a] text-[20px] font-bold">
+    &rsaquo;
+  </button>
+
+  <button data-action="last" class="nav-btn text-[#ff8a8a] text-[20px] font-bold">
+    &raquo;
+  </button>
+</div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="bg-[#f3eee0] pt-6 pb-6 border-t border-gray-200">
+  <div class="max-w-[1240px] mx-auto px-6">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+
+      <!-- ITEM -->
+      <div class="text-center">
+        <img
+          src="//trysculptique.com/cdn/shop/files/ship-min.png?v=1758713222"
+          class="h-10 mx-auto mb-5 opacity-90"
+          alt=""
+        />
+        <h4 class="font-['Nunito'] text-[16px] mb-2 font-semibold">
+          Free Shipping from USA
+        </h4>
+        <p class="text-[16px] font-['Nunito'] leading-relaxed">
+          On all orders
+        </p>
+      </div>
+
+      <!-- ITEM -->
+      <div class="text-center">
+        <img
+          src="//trysculptique.com/cdn/shop/files/support-min.png?v=1758713216"
+          class="h-10 mx-auto mb-5 opacity-90"
+          alt=""
+        />
+        <h4 class="font-['Nunito'] text-[16px] mb-2 font-semibold">
+          Naturally Supports Your Body
+        </h4>
+        <p class="text-[16px] font-['Nunito'] leading-relaxed">
+          Promotes healthy immune cell functions
+        </p>
+      </div>
+
+      <!-- ITEM -->
+      <div class="text-center">
+        <img
+          src="//trysculptique.com/cdn/shop/files/natural-min.png?v=1758713216"
+          class="h-10 mx-auto mb-5 opacity-90"
+          alt=""
+        />
+        <h4 class="font-['Nunito'] text-[16px] mb-2 font-semibold">
+          100% Natural Ingredients
+        </h4>
+        <p class="text-[16px] font-['Nunito'] leading-relaxed">
+          8 active, natural ingredients
+        </p>
+      </div>
+
+      <!-- ITEM -->
+      <div class="text-center">
+        <img
+          src="//trysculptique.com/cdn/shop/files/60-min.png?v=1758713216"
+          class="h-10 mx-auto mb-5 opacity-90"
+          alt=""
+        />
+        <h4 class="font-['Nunito'] text-[16px] mb-2 font-semibold">
+          Try it Risk Free for 60 Days
+        </h4>
+        <p class="text-[16px] font-['Nunito'] leading-relaxed">
+          60-day money-back guarantee
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="bg-[#FFF] px-4 md:px-0 py-8 md:py-14 border rounded-[1px]">
+  <div class="max-w-[1240px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 rounded-2xl overflow-hidden">
+
+      <!-- LEFT CONTENT -->
+      <div class="bg-[#f7f7f7] p-6 md:p-8 flex flex-col justify-center order-2 md:order-1">
+        <span class="text-[16px] text-[#737373] font-['Nunito'] mb-4">
+          July 4th, 2025
+        </span>
+
+        <h2 class="font-['Lora'] text-[24px] md:text-[32px] leading-tight mb-6 leading-[1.3em]">
+          Expert Advice from Dr. Emily Chen<br />
+          of a Premier New York Skin Clinic
+        </h2>
+
+        <div class="space-y-2 text-[18px] font-['Nunito'] leading-[1.3em]">
+          <p>
+            “Your nutrition plays a powerful role in your appearance.
+            If your body is missing key vitamins and nutrients, it can’t
+            process fat and upkeep healthy connective tissue, which is why
+            unprocessed fat flows up and starts pushing up against your skin,
+            forming bumps you know as cellulite.
+          </p>
+
+          <p>
+            SmoothSkin by Sculptique™ contains ingredients that are
+            scientifically proven to enhance microcirculation, boost
+            lymphatic drainage, and reduce inflammation, which restores
+            your tissue and breaks down the fat cells in your skin.”
+          </p>
+        </div>
+
+<!-- CTA -->
+<div class="mt-[18px] flex flex-col items-start">
+  <button
+    class="bg-black text-white px-12 md:px-20 py-4 text-[16px] md:text-[18px] font-['Nunito'] rounded-[4px] hover:opacity-90 transition w-fit"
+  >
+    Try Lymphatic Drainage Risk-Free
+  </button>
+
+  <div class="flex items-center justify-center gap-2 mt-4 text-[16px] font-['Nunito'] font-semibold w-full">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395"
+      alt=""
+      class="w-6 h-6 opacity-70"
+    />
+    <span>60-Day Money-Back Guarantee</span>
+  </div>
+</div>
+
+
+
+      </div>
+
+<!-- RIGHT IMAGE -->
+<div class="bg-[#f4efdf] flex items-center justify-center order-1 md:order-2">
+  <img
+    src="//trysculptique.com/cdn/shop/files/greendeskt-min.png?v=1758713213"
+    alt="Doctor"
+    class="w-full h-full object-cover"
+  />
+</div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#f3eee0]">
+  <div class="max-w-[1340px] mx-auto p-8 md:p-14">
+        <!-- Header -->
+        <div class=" text-center mb-6">
+            <div class="mb-6">
+                <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_review_2.png?v=1752485383" alt="Trustpilot Reviews" class="mx-auto max-w-[300px]">
+            </div>
+            <h2 class=" text-[24px] md:text-[32px] font-['Lora'] leading-[1.3em]">See The Stories of Sculptique™ Women Firsthand</h2>
+        </div>
+
+        <!-- Carousel -->
+        <div class="relative mb-4">
+            <div class="overflow-hidden" id="carouselWrapper" style="width: 100%;">
+                <div class="carousel-container" id="carousel">
+                    <!-- Video 1 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_12.40.11.png?v=1752486039" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/014b7db24d12443791bd22d345637ccc.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 2 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.12.02.png?v=1752498744" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/4eecdc1058f349628e1c50ba81112b54.mov" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 3 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.04.png?v=1752497038" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/2967808b09114feb9616d295fd2f3557.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 4 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.34.png?v=1752497063" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/88efaa94523742bdb8f980d66600cde2.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 5 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_16.11.50.png?v=1752498777" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/a7bce8da322747e08ef1ce7c87317c30.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 6 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.43.10.png?v=1752497092" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/3a117937ae264508b440a6972ebcb6a1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 7 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.44.54.png?v=1752497118" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/27085ed5be5c4c38ad579f0fdae8aefa.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 8 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.46.37.png?v=1752497216" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/a4ab9e815f3446ea8b84292627ec2a10.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 9 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.45.36.png?v=1752497166" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/68b2aa06fab44d968723e052a14d87d5.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Video 10 -->
+                    <div class="carousel-item">
+                        <div class="video-container aspect-[9/16]">
+                            <img src="//trysculptique.com/cdn/shop/files/Screenshot_2025-07-14_at_15.47.12.png?v=1752497252" alt="Testimonial" class="w-full h-full object-cover">
+                            <div class="play-button"></div>
+                            <video class="absolute inset-0 hidden" playsinline>
+                                <source src="https://cdn.shopify.com/videos/c/o/v/0ec8de99a9c3459da6c53e18c0eeab3c.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar & Navigation -->
+        <div class="flex items-center gap-20 max-w-7xl mx-auto">
+            <div class="flex-1 flex" id="progressContainer"></div>
+            
+            <div class="flex gap-2 text-[#23a076]">
+                <button class="nav-button" id="prevBtn">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                
+                <button class="nav-button" id="nextBtn">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-10">
+            <button class="bg-black text-white px-14 py-4 md:px-[80px] md:py-[18px] rounded-[4px] text-[16px] md:text-[18px] font-['Nunito'] hover:bg-gray-700 transition-colors">
+                Try Lymphatic Drainage Risk-Free
+            </button>
+            <div class="flex items-center justify-center gap-2 mt-4">
+                <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395" class="w-6 h-6" >
+                <span class="text-[16px] font-['Nunito']">60-Day Money-Back Guarantee</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="custom-faq-section">
+  <h2 class="faq-title text-[24px] md:text-[32px]">Frequently Asked Questions</h2>
+  <div class="faq-wrapper">
+        <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>How is this different from lymphatic drops I saw on TikTok?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Lymphatic drops have poor bioavailability—liquid ingredients pass through your digestive system too quickly to be properly absorbed. Most contain only milligrams of herbs (symbolic amounts, not therapeutic doses) and act as basic diuretics that pull water from your bloodstream, not from tissue swelling.</p>
+                    <p>Sculptique uses capsules with therapeutic doses (100-500mg per ingredient) that are properly absorbed and work at the cellular level to restore vessel function, break down protein clogs, and strengthen vessel walls—not just make you urinate more.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>Why didn't my diet changes work?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Your diet only addressed what goes INTO your system (inflammation from food). It didn't fix your body's broken ability to drain what's already there. That's why you could eat perfectly clean and still wake up bloated—the backed-up lymphatic waste was still pooling in your tissues.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>How long until I see results?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Most women notice something within the first week—feeling lighter, less bloated, morning puffiness fading faster. Visible changes happen by weeks 2-3. Transformation becomes undeniable by weeks 4-6. But true restoration takes time—we recommend 90 days for complete results.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>Is this safe? Any side effects?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Sculptique contains 100% natural botanical ingredients used safely for centuries. The most common experience is increased urination in the first few days (expected—you're flushing excess fluid). Serious side effects are extremely rare. However, if you have pre-existing conditions or take prescription medications, consult your healthcare provider first.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>Can I take this with other supplements?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Yes. Sculptique works synergistically with most supplements. However, if you're taking blood thinners, diuretics, thyroid medication, or immune-suppressing drugs, check with your healthcare provider first.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>How do I use it?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Take 2 capsules daily with water. Any time of day (though mornings are ideal). With or without food. Just be consistent.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>What if it doesn't work for me?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>You have 60 full days to try it. If you don't feel lighter, less bloated, more energized—send it back. Even if you've taken every capsule. We'll refund your purchase immediately. You only keep Sculptique if it works for YOU.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>Where is this manufactured?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Sculptique is manufactured in the USA at an FDA-registered, GMP-certified facility. We use Infrared Spectroscopy testing, heavy metal testing, and third-party quality control. Every batch is tested to ensure therapeutic doses with no contaminants.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>Why isn't this in stores?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Two reasons: Quality control (we oversee the entire process from sourcing to testing) and price (retail markup would make it cost at least double). By selling direct, we maintain the highest quality while keeping the price affordable.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-header" onclick="toggleFaq(this)">
+                <span>Is this vegan/gluten-free?</span>
+                <div class="arrow-icon"></div>
+            </button>
+            <div class="faq-content">
+                <div class="faq-text font-['Nunito']">
+                    <p>Yes. 100% vegan, gluten-free, sugar-free, no artificial ingredients</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+          <div class="faq-footer">
+            <button class="bg-black text-white px-16 py-4 md:px-[80px] md:py-[18px] rounded-[4px] text-[16px] md:text-[18px] font-['Nunito'] hover:bg-gray-700 transition-colors">
+                Try Lymphatic Drainage Risk-Free
+            </button>
+            <div class="guarantee-text">
+                <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395" alt="shield"> 
+                60-Day Money-Back Guarantee
+            </div>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="flex flex-col md:flex-row items-center justify-between max-w-7xl p-4 mx-auto md:p-12 bg-white text-center md:text-left">
+
+    <!-- LEFT CONTENT -->
+    <div class="w-full md:w-[55%] flex flex-col items-center md:items-start">
+
+        <h1 class="text-[24px] md:text-[32px] font-['Lora'] leading-tight mb-4">
+            We’re On A Mission To Help 100,000,000 Women Visibly, Naturally Get Rid Of Bloating...And Feel Like Themselves Again
+        </h1>
+
+        <p class="text-[18px] font-['Nunito'] mb-4">
+            Here's where we're at right now:
+        </p>
+
+        <!-- PRODUCT IMAGE (MOBILE ONLY) -->
+        <div class="w-full flex justify-center mb-6 md:hidden">
+            <img
+                src="//trysculptique.com/cdn/shop/files/Frame_1000003537.jpg?v=1760943777"
+                alt=""
+                class="max-w-[368px] h-auto object-contain"
+            >
+        </div>
+
+        <!-- STATS -->
+        <div class="w-full flex justify-center md:justify-start">
+            <!-- Desktop stats -->
+            <img
+                src="//trysculptique.com/cdn/shop/files/numbdeskt-min_png.png?v=1760942458"
+                alt=""
+                class="hidden md:block w-full h-auto object-contain"
+            >
+
+            <!-- Mobile stats -->
+            <img
+                src="//trysculptique.com/cdn/shop/files/numbmob-min_png.png?v=1760942458"
+                alt=""
+                class="block md:hidden w-full max-w-[370px] h-auto object-contain pb-8"
+            >
+        </div>
+    </div>
+
+    <!-- PRODUCT IMAGE (DESKTOP ONLY) -->
+    <div class="w-full md:w-[45%] hidden md:flex justify-center items-center">
+        <img
+            src="//trysculptique.com/cdn/shop/files/Frame_1000003537.jpg?v=1760943777"
+            alt=""
+            class="max-w-full h-auto object-contain"
+        >
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-[#f3eee0] py-6 px-4 md:py-14 md:px-12 lg:px-16">
+  <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+    
+    <!-- LEFT CONTENT -->
+    <div class="w-full lg:w-1/2 flex flex-col gap-6">
+      <div class="flex items-center">
+        <!-- Desktop image -->
+        <img 
+            src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_review.png?v=1752480694"
+            alt="93,000+ Customers Trustpilot"
+            class="hidden md:block w-[350px] object-contain"
+        >
+
+        <!-- Mobile image -->
+        <img 
+            src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/Trustpilot_review_1.png?v=1752480694"
+            alt="93,000+ Customers Trustpilot"
+            class="block md:hidden w-[260px] object-contain mx-auto"
+        >
+      </div>
+
+      <h2 class="text-[24px] md:text-[32px] font-['Lora']">
+          Stop Masking Symptoms. Start Restoring Root Cause.
+      </h2>
+
+      <div class="flex flex-col gap-2 font-['Nunito'] text-[18px] md:text-[18px] leading-[1.3em] max-w-xl">
+          <p>
+              You deserve to feel like yourself again. To wake up without puffiness. To see your ankles. To look in the mirror and recognize the vibrant woman staring back. To have energy for the people you love.
+          </p>
+          <p>
+              You deserve a solution that actually works. Not temporary relief. Not symptom masking. Complete lymphatic restoration.
+          </p>
+      </div>
+
+      <!-- MOBILE IMAGE PLACED HERE -->
+      <img 
+        src="//trysculptique.com/cdn/shop/files/before-min_png.png?v=1760688928" 
+        alt="Results Grid" 
+        class="w-full h-auto rounded-xl shadow-sm block lg:hidden"
+      >
+
+      <div class="flex flex-col gap-5 md:mt-2">
+          <button class="bg-black text-white text-[16px] px-[16px] py-[16px] text-center md:py-[18px] md:px-[80px] md:text-[18px] font-['Nunito'] rounded-[4px] hover:bg-zinc-700 transition-all w-full md:w-[450px]">
+              Try Lymphatic Drainage Risk-Free
+          </button>
+          
+          <div class="w-[80%] flex items-center justify-center gap-2 mx-auto md:mx-0">
+              <img src="https://cdn.shopify.com/s/files/1/0917/5649/5191/files/60-days_11622780_1_1.png?v=1752388395" alt="60-Day Guarantee" class="h-6">
+              <span class="px-2 py-0.5 text-[16px] font-['Nunito'] ">
+                  60-Day Money-Back Guarantee
+              </span>
+          </div>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="w-full lg:w-1/2 hidden lg:block">
+      <img src="//trysculptique.com/cdn/shop/files/before-min_png.png?v=1760688928" alt="Results Grid" class="w-full h-auto rounded-xl shadow-sm">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="nutritionModal" class="fixed inset-0 z-[60] hidden flex items-center justify-center p-2 sm:p-2">
+
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative z-10 w-full max-w-[450px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[95vh] sm:max-h-none">
+        
+        <div class="relative px-4 pt-4 pb-0 text-center shrink-0">
+            <h2 class="text-[28px] font-['Lora'] tracking-wide">
+                Nutritional Information
+            </h2>
+            
+            <button id="closeNutritionModal" class="absolute top-3 right-3 text-rose-400 border border-rose-500 rounded-full w-7 h-7 flex items-center justify-center hover:bg-rose-50 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="red" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="p-4 sm:p-4 pt-2 space-y-5 overflow-y-auto scrollbar-hide">
+            
+            <div class="overflow-hidden">
+                <img 
+                  src="//trysculptique.com/cdn/shop/files/ingredients-min.png?v=1758713223"
+                  alt="Supplement Facts"
+                  class="w-full h-auto block"
+                />
+            </div>
+
+            <button class="w-full bg-black hover:bg-gray-800 text-white p-5 rounded-[8px] font-medium text-[16px] font-['Montserrat'] shadow-lg transition-transform active:scale-[0.98]">
+                Try Lymphatic Drainage Risk-Free
+            </button>
+
+            <div class="grid grid-cols-2 gap-y-3 gap-x-2 text-[12px] font-['Inter'] text-gray-700 sm:flex sm:flex-wrap sm:justify-center sm:gap-3 pb-2">
+                <div class="flex items-center gap-1.5">
+                    <svg class="w-5 h-5 text-rose-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Made & produced in the USA</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <svg class="w-5 h-5 text-rose-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>100% Natural Ingredients</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <svg class="w-5 h-5 text-rose-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>60-Day Money-Back Guarantee</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <svg class="w-5 h-5 text-rose-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Free Shipping</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+(function() {
+    const mainImg = document.getElementById('mainProductImage');
+    const subImages = document.querySelectorAll('.sub-image');
+    const subContainer = document.getElementById('subImageContainer');
+    const openBtn = document.getElementById("openNutritionModal");
+    const modal = document.getElementById("nutritionModal");
+    const closeBtn = document.getElementById("closeNutritionModal");
+
+    const imageSources = Array.from(subImages).map(img => img.src);
+    let currentSlideIdx = 0;
+
+    function updateGallery(index) {
+        currentSlideIdx = index;
+        
+        // 1. Cập nhật ảnh to
+        mainImg.style.opacity = '0.4';
+        setTimeout(() => {
+            mainImg.src = imageSources[currentSlideIdx];
+            mainImg.style.opacity = '1';
+        }, 120);
+
+        // 2. Cập nhật trạng thái ảnh nhỏ (Border & Opacity)
+        subImages.forEach((img, i) => {
+            if (i === currentSlideIdx) {
+                img.style.border = "2px solid black";
+                img.style.opacity = "1";
+            } else {
+                img.style.border = "2px solid transparent";
+                img.style.opacity = "0.6";
+            }
+        });
+
+        // 3. FIX SCROLL MOBILE: Tính toán offset chuẩn để ảnh nhảy về đầu list
+        if (window.innerWidth < 768 && subContainer) {
+            const targetImg = subImages[currentSlideIdx];
+            // Lấy vị trí của ảnh nhỏ so với container cha
+            const offsetLeft = targetImg.offsetLeft - subContainer.offsetLeft;
+            
+            subContainer.scrollTo({
+                left: offsetLeft,
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Export hàm ra window để các nút onclick HTML nhận diện được
+    window.changeSlide = function(direction) {
+        let newIndex = currentSlideIdx + direction;
+        if (newIndex >= imageSources.length) newIndex = 0;
+        if (newIndex < 0) newIndex = imageSources.length - 1;
+        updateGallery(newIndex);
+    };
+
+    // Click chọn ảnh nhỏ
+    subImages.forEach((img, index) => {
+        img.addEventListener('click', () => updateGallery(index));
+    });
+
+    // Xử lý Modal
+    if (openBtn && modal && closeBtn) {
+        openBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            modal.classList.remove("hidden");
+            modal.classList.add("flex"); // Đảm bảo flex để căn giữa
+            document.body.style.overflow = 'hidden';
+        });
+
+        const hideModal = () => {
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            document.body.style.overflow = '';
+        };
+
+        closeBtn.addEventListener("click", hideModal);
+        modal.addEventListener("click", (e) => {
+            if (e.target.id === "nutritionModal" || e.target.classList.contains('bg-black/70')) {
+                hideModal();
+            }
+        });
+    }
+})();
+</script>
+
+
+<script src="script.js"></script>
+</body>
+</html>
